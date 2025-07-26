@@ -1,0 +1,55 @@
+body {
+    background: rgb(98, 98, 213);
+    font-family: 'Comic Sans MS';
+}
+.game-title {
+    color: white;
+    font-size: 47px;
+    text-align: center;
+    font-weight: bold;
+}
+.image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.counter {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.rotate-title {
+    animation: spin 5s ease-in-out infinite;
+    display: inline-block;
+    margin-top: 35px;
+}
+
+/* Rotate animation for title */
+@keyframes spin {
+    0%   { transform: rotate(-10deg); }
+    50%  { transform: rotate(10deg); }
+    100% { transform: rotate(-10deg); }
+}
+
+        /* Pop animation for image */
+        @keyframes pop {
+            0%   { transform: scale(1); }
+            50%  { transform: scale(1.15); }
+            100% { transform: scale(1); }
+        } 
+
+        .pop {
+            animation: pop 0.3s ease;
+        }
+.title-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
